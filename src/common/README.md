@@ -7,9 +7,11 @@ Installs a set of common features.
 
 ```json
 "features": {
-    "ghcr.io/russelltsherman/devcontainer-features/common": {}
+    "ghcr.io/russelltsherman/devcontainer-features/common:0": {}
 }
 ```
+
+
 
 ## Customizations
 
