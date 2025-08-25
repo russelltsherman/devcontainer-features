@@ -1,0 +1,30 @@
+{
+    "id": "common",
+    "version": "0.0.1",
+    "name": "Common Features",
+    "documentationURL": "https://github.com/russelltsherman/devcontainer-features/tree/main/src/common",
+    "description": "Installs a set of common features.",
+
+    "customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			"settings": {},
+			"extensions": [
+				"davidanson.vscode-markdownlint",
+				"editorconfig.editorconfig",
+				"ms-azuretools.vscode-docker",
+				"ms-vscode.makefile-tools"
+			]
+		}
+	},
+
+    "mounts": [
+        // bind mount users profile directory into container at /localhost
+        {
+            "source": "${localEnv:HOME}${localEnv:USERPROFILE}",
+            "target": "/localhost",
+            "type": "bind"
+        }
+    ]
+
+}
